@@ -28,7 +28,7 @@ function App() {
                     <Route path="/login/" exact={true} component={Login} />
                     <Route path="/SignUp/" exact={true} component={SignUp} />
                     <Route path="/Details/" exact={true} component={Detail} />
-                    <Route path="/wheather" exact={true} component={Wheather} />
+                    <Route path="/aboutUs" exact={true} component={About} />
                     <Route path="/" exact={true} component={Wheather} />
                     <Route component={Wheather} />
                 </Switch>
