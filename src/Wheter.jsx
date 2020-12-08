@@ -19,6 +19,9 @@ const Wheather = () => {
   const [city, setCity] = useState("");
   function inputEvent(event) {
     setCity(event.target.value);
+    document.getElementById("city").innerHTML = "";
+    document.getElementById("type").innerHTML = "";
+    document.getElementById("temp").innerHTML = "";
     // console.log(event.target.value)
     // hide(document.getElementById('hide'))
   }
