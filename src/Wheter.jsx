@@ -41,27 +41,20 @@ const Wheather = () => {
       const photo = await photoResponse.json();
       if(photo?.results?.length) {
         imageURL = photo.results[0].urls.small;
-        document.getElementById("image").src = imageURL;
+        document.getElementById("weather-image").src = imageURL;
         console.log(imageURL);
       }
       const kelvin = weatherData.main.temp;
       const celcius = kelvin - 273.15;
-      console.log(Math.round(celcius));
-      // console.log(data.sys.country)
-      console.log(weatherData.name)
-      console.log(weatherData)
+      // console.log(Math.round(celcius));
+      // // console.log(data.sys.country)
+      // console.log(weatherData.name)
+      // console.log(weatherData)
       // console.log(data.weather[0].main)
-<<<<<<< HEAD
-      document.getElementById("city").innerHTML = "   Location:" + data.name + " " + "Country:" + data.sys.country;
-      document.getElementById("type").innerHTML = "Feels Like " + data.weather[0].main + " In " + data.name;
-      document.getElementById("temp").innerHTML = "Temperature : " + Math.round(celcius) + " ° C";
-    }).catch(error => {
-=======
       document.getElementById("city").innerHTML = "   Location: " + weatherData.name + " | " + "Country: " + weatherData.sys.country;
       document.getElementById("type").innerHTML = "Feels Like " + weatherData.weather[0].main + " In " + weatherData.name;
       document.getElementById("temp").innerHTML = "Temperature: " + Math.round(celcius) + "°C";
     } else {
->>>>>>> 60d11da410db85685ece535d061630443d0d24f5
       document.getElementById("type").innerHTML = "Location not found";
     }
     //   show(document.getElementById('hide'));
@@ -75,7 +68,7 @@ const Wheather = () => {
       <section className="text-gray-700 body-font">
         <form onSubmit={onSubmit}>
           <div className="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
-            <img id="image" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+            <img id="weather-image" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
               alt="hero" src={imageURL} />
             <div className="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Please Enter Location</h1>

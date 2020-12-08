@@ -1,13 +1,13 @@
 import React from 'react';
 import {  Link } from 'react-router-dom';
 import './style.css'
-// import logo from '../public/logo.png'
+import logo from './logo.png'
 const Header = () => {
 
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-blue">
-                <img id="image" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="%PUBLIC_URL%/logo.png" />
+               <Link to="/"><img  id="image" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src={logo} /></Link> 
    
                     <Link to="/" className="navbar-brand">Home</Link>
 

@@ -42,3 +42,12 @@ ul{
     list-style: armenian;
     list-style-type: square ;
 }
+
+#image{
+    width: 50px;
+    margin-top: 25px;   
+     margin-right: 10px;
+
+height: 50px;
+display: inline;
+}

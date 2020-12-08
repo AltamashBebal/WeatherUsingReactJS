@@ -1,5 +1,8 @@
 import React from 'react';
 import './style.css'
+import logo from './logo.png';
+import {  Link } from 'react-router-dom';
+
 const Footer = () => {
 
     return (
@@ -7,7 +10,7 @@ const Footer = () => {
 <footer className="text-gray-700 body-font">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-    <img id="image" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="%PUBLIC_URL%/logo.png" />
+    <Link to="/"> <img id="image" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"src={logo}  /></Link>
      
       <span className="ml-3 text-xl">Altamash Bebal</span>
     </a>
@@ -32,7 +35,7 @@ const Footer = () => {
         </svg>
       </a>
       <a href="https://www.linkedin.com/in/altamash-bebal-171a65181/" target="_blank" className="ml-3 text-gray-500">
-        <img id="image" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="%PUBLIC_URL%/logo.png" />
+      <Link to="/"> <img  className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"  /></Link> 
       </a>
     </span>
   
