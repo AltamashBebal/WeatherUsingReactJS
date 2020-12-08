@@ -29,7 +29,7 @@ function App() {
                     <Route path="/SignUp/" exact={true} component={SignUp} />
                     <Route path="/Details/" exact={true} component={Detail} />
                     <Route path="/wheather" exact={true} component={Wheather} />
-                    <Route path="/" exact={true} component={Home} />
+                    <Route path="/" exact={true} component={Wheather} />
                     <Route component={Home} />
                 </Switch>
                 <Footer />
