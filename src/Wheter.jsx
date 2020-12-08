@@ -37,10 +37,11 @@ const Wheather = () => {
           const kelvin = data.main.temp ;
           const celcius = kelvin - 273.15 ;
           console.log(Math.round(celcius));
-          console.log(data.sys.country)
+          // console.log(data.sys.country)
+          console.log(data.name)
           console.log(data)
-          console.log(data.weather[0].main)
-          document.getElementById("city").innerHTML="   Location:"+name+" "+"Country:"+data.sys.country;
+          // console.log(data.weather[0].main)
+          document.getElementById("city").innerHTML="   Location:"+data.name+" "+"Country:"+data.sys.country;
           document.getElementById("type").innerHTML="Feels Like "+data.weather[0].main +" In "+name;
           document.getElementById("temp").innerHTML="Temperature :"+Math.round(celcius) +" D(Celcius)";
 
