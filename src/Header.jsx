@@ -7,9 +7,7 @@ const Header = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-blue">
-                <svg href="/" img="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
+                <img id="image" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="%PUBLIC_URL%/logo.png" />
    
                     <Link to="/" className="navbar-brand">Home</Link>
 
