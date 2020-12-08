@@ -40,8 +40,9 @@ const Wheather = () => {
           console.log(data.sys.country)
           console.log(data)
           console.log(data.weather[0].main)
-          document.getElementById("city").innerHTML="Location:"+name+" "+"Country:"+data.sys.country;
+          document.getElementById("city").innerHTML="   Location:"+name+" "+"Country:"+data.sys.country;
           document.getElementById("type").innerHTML="Feels Like "+data.weather[0].main +" In "+name;
+          document.getElementById("temp").innerHTML="Temperature :"+Math.round(celcius) +" D(Celcius)";
 
 
           
@@ -85,6 +86,10 @@ document.title="Weather";
           
           <span className="ml-4 flex items-start flex-col leading-none">
             <span id="city" className="text-xs text-gray-600 mb-1"></span>
+            <br/>
+            <span id="temp" className="title-font font-medium"></span>
+            <br/>
+
             <span id="type" className="title-font font-medium"></span>
           </span>
         </button>
