@@ -1,0 +1,40 @@
+*{margin: 0; padding: 0;box-sizing: border-box;
+  font-family: 'Philosopher', sans-serif;
+  /* background-color: blueviolet; */
+}
+#demo{
+  /* text-align: center; */
+  filter: grayscale(1) contrast(1.2) opacity(0.4);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#ok2{
+  background: rgb(168, 121, 212);
+  width: 100px;
+  /* position: center; */
+  align-items: center;
+  /* padding: 10px; */
+  justify-content: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading{
+  color: rgba(22, 119, 30, 0.863) ;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: normal;
+  text-shadow: 0px 2px 4px #ffe9c5;
+}
+
+.img-div{
+  margin: 76px;
+  display: flex;
+  justify-content: center;
+width: 250px;
+height: 300px;
+margin: auto;
+}
