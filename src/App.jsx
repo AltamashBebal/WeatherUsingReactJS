@@ -30,7 +30,7 @@ function App() {
                     <Route path="/Details/" exact={true} component={Detail} />
                     <Route path="/wheather" exact={true} component={Wheather} />
                     <Route path="/" exact={true} component={Wheather} />
-                    <Route component={Home} />
+                    <Route component={Wheather} />
                 </Switch>
                 <Footer />
             </BrowserRouter>
